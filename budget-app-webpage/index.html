@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Budget Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header>
+        <script src="index.js" type="text/javascript"></script>
+    </header>
+    <body>
+       <h1>Budget Calculator</h1>
+       <div class="container">
+        <form onsubmit="return false;">
+            <p>This website uses the 5:3:2 plan to calculate a budget for you.</p>
+            <p>Please input your monthly income: </p>
+            <input type="number" id="monthly_input"><br>
+            <br><button type="button" id="calculate_button" onclick="unhide_results();">Calculate</button>
+        </form>
+       </div> 
+       <div class="results" id="div_results">
+            <p id="total_value"></p>
+            <p id="expenses_value"></p>
+            <p id="spending_value"></p>
+            <p id="savings_value"></p><br>
+            Rent / Mortgage: <input type="number" id="rent_input"><br><br>
+            Bills: <input type="number" id="bills_input"><br>
+            <br><button type="button" id="detailed_button" onclick="unhide_detailed();">View Detailed Spending</button>
+            <div class="detailed" id="div_detailed">
+                <p id="rent_value"></p>
+                <p id="bills_value"></p>
+                <p id="left_value"></p>
+            </div>
+            <button type="button" id="reset_button" onclick="reset_form();">Reset</button>
+       </div>
+    </body>
+</html>

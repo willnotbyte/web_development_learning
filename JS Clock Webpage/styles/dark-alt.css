@@ -1,0 +1,56 @@
+html, body {
+    color: #bfbcbc;
+
+    font-family: Consolas, monospace;
+}
+
+body {
+    background-color: #111418;
+}
+
+.keyword {
+    color: #329f9f;
+}
+
+.local-variable {
+    color: #c22727;
+}
+
+.operator {
+    color: #ea9f46;
+}
+
+.bracket {
+    color: #ea9f46;
+}
+
+.object-key {
+    color: inherit;
+}
+
+.number {
+    color: #099376;
+}
+
+.string {
+    color: #099376;
+}
+
+.dropbtn {
+    background-color: #111418;
+    color: #329f9f;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #191d22;
+  }
+
+  .dropdown-content a {
+    color: #329f9f;
+    background-color: #111418;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #191d22;
+  }

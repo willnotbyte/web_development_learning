@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link id="pagestyle" rel="stylesheet" type="text/css" href="./styles/main.css">
+        <title>JavaScript Clock</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <p><span class="keyword">const</span> <span class="variable">clock</span> <span class="operator">=</span> <span class="bracket">{</span></p>
+
+            <p id="hour" class="tab-on">hour<span class="colon">: </span><span id="hour_value" class="keyword">undefined</span><span class="comma">,</span></p>
+
+            <p id="minute" class="tab-on">minute<span class="colon">: </span><span id="min_value" class="keyword">undefined</span><span class="comma">,</span></p>
+
+            <p id="second" class="tab-on">second<span class="colon">: </span><span id="sec_value" class="keyword">undefined</span><span class="comma">,</span></p>
+
+            <p id="period" class="tab-on">period<span class="colon">: </span><span id="period_value" class="keyword">undefined</span><span class="comma">,</span></p>
+
+            <p id="day" class="tab-on">day<span class="colon">: </span><span id="day_value" class="keyword">undefined</span><span class="comma">,</span></p>
+
+            <p id="month" class="tab-on">month<span class="colon">: </span><span id="month_value" class="keyword">undefined</span><span class="comma">,</span></p>
+
+            <p id="year" class="tab-on">year<span class="colon">: </span><span id="year_value" class="keyword">undefined</span><span class="comma">,</span></p>
+            
+            <p><span class="bracket">}</span>;</p>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="dropdown()" class="dropbtn">Themes</button>
+            <div id="dropdown_menu" class="dropdown-content">
+                <a href="#" onclick="swapStyleSheet('./styles/main.css')">Default</a>
+                <a href="#" onclick="swapStyleSheet('./styles/light-modern.css')">Light</a>
+                <a href="#" onclick="swapStyleSheet('./styles/dark-modern.css')">Dark</a>
+                <a href="#" onclick="swapStyleSheet('./styles/lavender-wash.css')">Lavender-Wash</a>
+                <a href="#" onclick="swapStyleSheet('./styles/dark-alt.css')">Dark-Alt</a>
+           </div>
+        </div>
+
+        <script src="./scripts/main.js"></script>
+        <script src="./scripts/dropdown.js"></script>
+        <script src="./scripts/swapstyle.js"></script>
+    </body>
+</html>
